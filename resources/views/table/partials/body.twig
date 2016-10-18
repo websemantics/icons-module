@@ -1,0 +1,18 @@
+<tbody>
+  <tr>
+    <td class="ui-selectable">
+      {% for row in table.rows %}
+          {% set class = row.columns.get(1) %}
+          {% set type = row.columns.get(0) %}
+          <label id="{{ loop.index }}" class="c-input c-checkbox" data-toggle="tooltip" data-placement="top" title="{{type.value|raw}}">
+              <input type="checkbox" name="{{ row.table.options.prefix }}id[]" value="{{ row.key }}"/>
+              <span class="c-indicator">
+                <span><i class="{{class.value|raw}}"></i></span>
+                <span class="roller"><i class="{{class.value|raw}}"></i></span>
+                {{ buttons(row.buttons)|raw }}
+              </span>
+          </label>
+      {% endfor %}
+    </td>
+  </tr>
+</tbody>

@@ -1,0 +1,14 @@
+{
+    "name": "websemantics/icons-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Websemantics\\IconsModule\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helper_functions.php"
+        ]
+    },
+    "require": {
+    }
+}
