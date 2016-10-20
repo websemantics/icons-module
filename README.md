@@ -40,4 +40,4 @@ php artisan module:install websemantics.module.icons
 ## License
 
 [MIT license](http://opensource.org/licenses/mit-license.php)
-Copyright (c) Web Semantics, Inc.
+Copyright © [Web Semantics, Inc.](http://websemantics.ca)
